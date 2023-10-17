@@ -250,11 +250,7 @@ organizations to harness the full potential of the knowledge at their disposal. 
             uploaded_file = st.file_uploader("Upload a file for summarization", type=["pdf","docx","txt"])
             # stuff_button = st.button("Load chatgpt")
             # if uploaded_file and stuff_button:
-                # temp_dir = tempfile.mkdtemp()
-                # file = os.path.join(temp_dir, uploaded_file.name)
-                # st.write(file)
-                # with open(file, "wb") as f:
-                #     f.write(uploaded_file.getvalue())
+              
             # text =  change_file_to_txt(file)
             # docs = turn_txt_to_langchain_doc(text)
                 
@@ -271,9 +267,14 @@ organizations to harness the full potential of the knowledge at their disposal. 
                                 
         if api_key :
             os.environ["OPENAI_API_KEY"] = api_key
-            llm = ChatOpenAI(temperature=0, model_name = "gpt-3.5-turbo")        
+            llm = ChatOpenAI(temperature=0, model_name = "gpt-3.5-turbo")  
+            temp_dir = tempfile.mkdtemp()
+            file = os.path.join(temp_dir, uploaded_file.name)
+            st.write(file)
+            with open(file, "wb") as f:
+                f.write(uploaded_file.getvalue())      
             filename = os.path.join("./",uploaded_file.name)
-            text = change_file_to_txt(filename)
+            text = change_file_to_txt(file)
             docs = turn_txt_to_langchain_doc(text)
             # st.write(docs)   
             def prompting_gpt(text = text):
