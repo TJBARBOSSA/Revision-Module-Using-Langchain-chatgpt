@@ -5,3 +5,7 @@ pypdf
 streamlit
 chromadb
 tiktoken
+numpy
+streamlit-option-menu
+forex-python
+opencv-contrib-python-headless
