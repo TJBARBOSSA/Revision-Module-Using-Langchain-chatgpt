@@ -17,9 +17,9 @@ import PyPDF2
 import docx2txt
 import tempfile
 import time
-__import__('pysqlite3')
+# __import__('pysqlite3')
 import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 cr = CurrencyRates()
 def load_document(file):
     import os
