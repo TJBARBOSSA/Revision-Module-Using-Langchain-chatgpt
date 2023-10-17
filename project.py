@@ -270,7 +270,7 @@ organizations to harness the full potential of the knowledge at their disposal. 
             llm = ChatOpenAI(temperature=0, model_name = "gpt-3.5-turbo")  
             temp_dir = tempfile.mkdtemp()
             file = os.path.join(temp_dir, uploaded_file.name)
-            st.write(file)
+            # st.write(file)
             with open(file, "wb") as f:
                 f.write(uploaded_file.getvalue())      
             filename = os.path.join("./",uploaded_file.name)
