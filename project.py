@@ -265,7 +265,7 @@ organizations to harness the full potential of the knowledge at their disposal. 
                 #             st.success("File loaded successfully")
                      
                                 
-        if api_key :
+        if api_key and uploaded_file:
             os.environ["OPENAI_API_KEY"] = api_key
             llm = ChatOpenAI(temperature=0, model_name = "gpt-3.5-turbo")  
             temp_dir = tempfile.mkdtemp()
