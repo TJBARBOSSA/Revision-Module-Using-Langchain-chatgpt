@@ -113,7 +113,7 @@ if __name__ == "__main__":
     # pic2 = "/workspaces/Python-project/front_end_app/Thapar_Institute_of_Engineering_and_Technology_University_logo.ico"
     # img2 = cv2.imread(pic2,1)
     # image2 = np.array([img2])
-    im = Image.open("/workspaces/Python-project/Revision_Module_For_Students_Using_ChatGpt/Thapar_Institute_of_Engineering_and_Technology_University_logo.ico")
+    im = Image.open("Thapar_Institute_of_Engineering_and_Technology_University_logo.ico")
     st.set_page_config(page_title="UCS751",page_icon=im, layout="centered" , initial_sidebar_state="collapsed")
     # option = st_btn_select(('option1', 'option2', 'option3', 'option4'), index=2)
     # with st.sidebar:
@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Revision module for exams</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
-        pic1 = "/workspaces/Python-project/Revision_Module_For_Students_Using_ChatGpt/ai-generated-7737009_1280.jpg"
+        pic1 = "ai-generated-7737009_1280.jpg"
         img1 = cv2.imread(pic1, 1)
         image1 = np.array([img1])
         st.image(image=image1,channels = "RGB" , caption = "Cover pic:  Image is submitted to creative commons by Alexandra_Koch on pixabay.com")
@@ -244,7 +244,7 @@ organizations to harness the full potential of the knowledge at their disposal. 
         st.markdown(new_title, unsafe_allow_html=True) 
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 19px;"> (Please upload document with max 1 page if you dont have gpt+ subscription as rate and size of data processed is limited to certain amount in free version and the app will crash. ) </p>' 
         st.markdown(new_title, unsafe_allow_html=True)
-        st.image("/workspaces/Python-project/Revision_Module_For_Students_Using_ChatGpt/business-5338474_640.jpg",caption="Cover image is taken from copyright free website pixabay and is posted by Altmann/geralt",)
+        st.image("business-5338474_640.jpg",caption="Cover image is taken from copyright free website pixabay and is posted by Altmann/geralt",)
         with st.sidebar:
             api_key = st.text_input("OpenAI API Key: " , type="password")
             uploaded_file = st.file_uploader("Upload a file for summarization", type=["pdf","docx","txt"])
