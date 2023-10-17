@@ -113,7 +113,7 @@ if __name__ == "__main__":
     # pic2 = "/workspaces/Python-project/front_end_app/Thapar_Institute_of_Engineering_and_Technology_University_logo.ico"
     # img2 = cv2.imread(pic2,1)
     # image2 = np.array([img2])
-    im = Image.open("/workspaces/Python-project/front_end_app/Thapar_Institute_of_Engineering_and_Technology_University_logo.ico")
+    im = Image.open("/workspaces/Python-project/Revision_Module_For_Students_Using_ChatGpt/Thapar_Institute_of_Engineering_and_Technology_University_logo.ico")
     st.set_page_config(page_title="UCS751",page_icon=im, layout="centered" , initial_sidebar_state="collapsed")
     # option = st_btn_select(('option1', 'option2', 'option3', 'option4'), index=2)
     # with st.sidebar:
@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Revision module for exams</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
-        pic1 = "/workspaces/Python-project/front_end_app/ai-generated-7737009_1280.jpg"
+        pic1 = "/workspaces/Python-project/Revision_Module_For_Students_Using_ChatGpt/ai-generated-7737009_1280.jpg"
         img1 = cv2.imread(pic1, 1)
         image1 = np.array([img1])
         st.image(image=image1,channels = "RGB" , caption = "Cover pic:  Image is submitted to creative commons by Alexandra_Koch on pixabay.com")
@@ -191,19 +191,60 @@ if __name__ == "__main__":
     if selected =="Home":
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Welcome to UCS751 Group Project</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
-    
-    
+
+        
+        st.write('''In our rapidly evolving digital age, information is more accessible than ever before. 
+                     However, the sheer volume of data can be overwhelming, making it challenging to locate and extract valuable insights from sources like PDF documents.
+                     The need for efficient knowledge extraction and summarization has led to the development of innovative solutions, one of which is the "PDF Q&A Solver." 
+                     This groundbreaking project combines the power of question-answering technology and document summarization to streamline information retrieval and enhance our understanding of complex documents.
+            ''')
+        st.write('''The PDF Q&A Solver: Bridging the Gap
+
+Imagine you have a lengthy PDF document packed with valuable information, but you don't have the time or patience to read 
+through the entire document. This is where the PDF Q&A Solver comes into play. This project combines the following 
+components to deliver a revolutionary information retrieval system:
+
+1.Document Parsing: The first step in this process involves the extraction of data from the PDF document. The system parses
+the text and understands its structure, converting the contents into a machine-readable format.
+
+2.Question and Answer Repository: Users can provide a set of questions and answers related to the document's content. These
+serve as the basis for the system to understand what information is relevant and what needs to be summarized.
+
+3.Summarization: After identifying relevant sections, the system summarizes the content based on the questions and answers 
+provided. This summarization process condenses the document into key points, allowing users to quickly access essential information.
+
+
+ ''')
+        st.write('''
+                 Benefits of the PDF Q&A Solver:
+
+            1.Time-Saving: Reading through lengthy documents can be time-consuming. With the PDF Q&A Solver, you can swiftly obtain crucial information without having to sift through the entire document.
+
+            2.Enhanced Understanding: The system doesn't just extract information; it also helps you understand how the questions relate to the answers, providing context and clarity.
+
+            3.Efficient Research: Researchers, students, and professionals can significantly expedite their work by quickly finding relevant data within documents.
+
+            4.Customizable: Users have the flexibility to input their own questions and answers, tailoring the system to their specific needs.
+
+                 ''')
+        st.write('''
+                 Conclusion:
+
+The PDF Q&A Solver represents a significant leap forward in the quest for efficient knowledge extraction from PDF documents. It combines the power of machine learning, NLP, and summarization techniques to
+revolutionize the way we interact with information, making it more accessible, comprehensible, and time-efficient. In an era where information is power, tools like the PDF Q&A Solver empower individuals and 
+organizations to harness the full potential of the knowledge at their disposal. This innovative project exemplifies the ongoing evolution of technology in making the world's vast store of information more manageable and accessible to all.
+                 ''')
     if selected =="About":
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Welcome to UCS751 Group Project</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
-    
+        st.write("UCS751 Simulation and Modeling is an advanced academic course that delves into the intricate world of replicating and analyzing real-world systems and processes through mathematical and computational models. Students explore various simulation techniques, including Monte Carlo, discrete event simulations, and agent-based modeling, while gaining hands-on experience in model development, data collection, and optimization. With applications spanning engineering, economics, healthcare, environmental science, and beyond, Simulation and Modeling equips students with the versatile skills needed to address complex challenges and inform data-driven decisions in an ever-evolving, technology-driven world.")
     
     if selected == "Summarizer":
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Document Summarizer </p>' 
         st.markdown(new_title, unsafe_allow_html=True) 
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 19px;"> (Please upload document with max 1 page if you dont have gpt+ subscription as rate and size of data processed is limited to certain amount in free version and the app will crash. ) </p>' 
         st.markdown(new_title, unsafe_allow_html=True)
-        st.image("/workspaces/Python-project/front_end_app/business-5338474_640.jpg",caption="Cover image is taken from copyright free website pixabay and is posted by Altmann/geralt",)
+        st.image("/workspaces/Python-project/Revision_Module_For_Students_Using_ChatGpt/business-5338474_640.jpg",caption="Cover image is taken from copyright free website pixabay and is posted by Altmann/geralt",)
         with st.sidebar:
             api_key = st.text_input("OpenAI API Key: " , type="password")
             uploaded_file = st.file_uploader("Upload a file for summarization", type=["pdf","docx","txt"])
