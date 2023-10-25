@@ -192,7 +192,7 @@ if __name__ == "__main__":
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;">UCS751 Project - Revision Module</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
 
-        
+        st.image("cover.jpg",caption="Cover image is used for educational purposes only and not for monetary gains")
         st.write('''Welcome to the home of Revision Module (using openai and langchain), your gateway to a revolutionary learning experience! Designed under the expert guidance of Dr. Sanjeev Rao as part of the UCS751 course, this app promises to enhance the way you approach education.
             ''')
         st.write('''At Revision Module, we are on a mission to make learning more accessible, engaging, and tailored to your unique needs. We believe that education should be a lifelong journey, and it should adapt to your pace and preferences. Dr. Sanjeev Rao, a renowned educator in UCS751, has helped shape this vision into a reality. ''')
@@ -237,7 +237,7 @@ if __name__ == "__main__":
         st.markdown(new_title, unsafe_allow_html=True) 
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 19px;"> (Please upload document with max 1 page if you dont have gpt+ subscription as rate and size of data processed is limited to certain amount in free version and the app will crash. ) </p>' 
         st.markdown(new_title, unsafe_allow_html=True)
-        st.image("business-5338474_640.jpg",caption="Cover image is taken from copyright free website pixabay and is posted by Altmann/geralt",)
+        st.image("business-5338474_640.jpg",caption="Cover image is taken from copyright free website pixabay and is posted by Altmann/geralt")
         with st.sidebar:
             api_key = st.text_input("OpenAI API Key: " , type="password")
             uploaded_file = st.file_uploader("Upload a file for summarization", type=["pdf","docx","txt"])
