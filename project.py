@@ -123,7 +123,7 @@ if __name__ == "__main__":
         options= ["Home" ,"QnA App" , "Summarizer", "About"],
         icons=["house","question","book","people-fill"],
         menu_icon="cast",
-        default_index=2,
+        default_index=0,
         orientation="horizontal"
     )
     if selected =="QnA App":
