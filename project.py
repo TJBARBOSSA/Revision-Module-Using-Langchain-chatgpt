@@ -189,7 +189,7 @@ if __name__ == "__main__":
             st.warning("Please click arrow button on the top right corner to open sidebar and enter openai api key")
                 
     if selected =="Home":
-        new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Welcome to UCS751 Project - Revision Module</p>' 
+        new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;">UCS751 Project - Revision Module</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
 
         
@@ -211,7 +211,7 @@ if __name__ == "__main__":
                  Thank you for visiting Revision Module. Together with Dr. Sanjeev Rao and the UCS751 community, we're here to revolutionize your learning experience.
                  ''')
     if selected =="About":
-        new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Welcome to UCS751 Group Project</p>' 
+        new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;">About</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
         st.write("Welcome to the About page of project. Our app is a labor of love brought to you by a dedicated team of talented individuals, each contributing their unique skills and expertise to create a transformative learning experience. Let's meet the minds that made this possible:")
         name1 = '<p style="font-family:Times-New-Roman; text-align: left; color:WHITE; font-size: 20px;"> Ishanpreet Singh</p>' 
