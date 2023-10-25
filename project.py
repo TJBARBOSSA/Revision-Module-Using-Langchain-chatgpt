@@ -202,9 +202,9 @@ if __name__ == "__main__":
 
             1.Reading through lengthy documents can be time-consuming and more frustrating when exams are much nearer than imagined. With the app, you can swiftly obtain crucial information without having to sift through the entire document.
 
-            2.Efficient Research: Researchers, students, and professionals can significantly expedite their work by quickly finding relevant data within documents.
+            2.Researchers, students, and professionals can significantly expedite their work by quickly finding relevant data within documents.
 
-            3.Customizable: Users have the flexibility to input their own questions and answers, tailoring the system to their specific needs.They can even get summary of entire document.
+            3.Users have the flexibility to input their own questions and answers, tailoring the system to their specific needs.They can even get summary of entire document.
 
                  ''')
         st.write('''
