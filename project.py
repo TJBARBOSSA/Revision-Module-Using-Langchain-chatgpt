@@ -195,10 +195,8 @@ if __name__ == "__main__":
         
         st.write('''Welcome to the home of Revision Module (using openai and langchain), your gateway to a revolutionary learning experience! Designed under the expert guidance of Dr. Sanjeev Rao as part of the UCS751 course, this app promises to enhance the way you approach education.
             ''')
-        st.write('''At Revision Module, we are on a mission to make learning more accessible, engaging, and tailored to your unique needs. We believe that education should be a lifelong journey, and it should adapt to your pace and preferences. Dr. Sanjeev Rao, a renowned educator in UCS751, has helped shape this vision into a reality.
-
-                Imagine you have a lengthy PDF document packed with valuable information, but you don't have the time or patience to read through the entire document. This is where our app comes into play. 
- ''')
+        st.write('''At Revision Module, we are on a mission to make learning more accessible, engaging, and tailored to your unique needs. We believe that education should be a lifelong journey, and it should adapt to your pace and preferences. Dr. Sanjeev Rao, a renowned educator in UCS751, has helped shape this vision into a reality. ''')
+        st.write("Imagine you have a lengthy PDF document packed with valuable information, but you don't have the time or patience to read through the entire document. This is where our app comes into play. ")
         st.write('''
                  Benefits of our app are:
 
@@ -216,19 +214,19 @@ if __name__ == "__main__":
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Welcome to UCS751 Group Project</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
         st.write("Welcome to the About page of project. Our app is a labor of love brought to you by a dedicated team of talented individuals, each contributing their unique skills and expertise to create a transformative learning experience. Let's meet the minds that made this possible:")
-        name1 = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Ishanpreet Singh</p>' 
+        name1 = '<p style="font-family:Times-New-Roman; text-align: left; color:WHITE; font-size: 20px;"> Ishanpreet Singh</p>' 
         st.markdown(name1, unsafe_allow_html=True)
         st.markdown("""
                         - Roll Number: 102003641
                         - Role: Lead Developer
                     """)
-        name2 = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Rohit Singla</p>' 
+        name2 = '<p style="font-family:Times-New-Roman; text-align: left; color:WHITE; font-size: 20px;"> Rohit Singla</p>' 
         st.markdown(name2, unsafe_allow_html=True)
         st.markdown("""
                         - Roll Number: 102003254
                         - Role: Developer
                     """)
-        name3 = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Tushar Gupta</p>' 
+        name3 = '<p style="font-family:Times-New-Roman; text-align: left; color:WHITE; font-size: 20px;"> Tushar Gupta</p>' 
         st.markdown(name3, unsafe_allow_html=True)
         st.markdown("""
                         - Roll Number: 102003252
