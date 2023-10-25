@@ -189,56 +189,51 @@ if __name__ == "__main__":
             st.warning("Please click arrow button on the top right corner to open sidebar and enter openai api key")
                 
     if selected =="Home":
-        new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Welcome to UCS751 Group Project</p>' 
+        new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Welcome to UCS751 Project - Revision Module</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
 
         
-        st.write('''In our rapidly evolving digital age, information is more accessible than ever before. 
-                     However, the sheer volume of data can be overwhelming, making it challenging to locate and extract valuable insights from sources like PDF documents.
-                     The need for efficient knowledge extraction and summarization has led to the development of innovative solutions, one of which is the "PDF Q&A Solver." 
-                     This groundbreaking project combines the power of question-answering technology and document summarization to streamline information retrieval and enhance our understanding of complex documents.
+        st.write('''Welcome to the home of Revision Module (using openai and langchain), your gateway to a revolutionary learning experience! Designed under the expert guidance of Dr. Sanjeev Rao as part of the UCS751 course, this app promises to enhance the way you approach education.
             ''')
-        st.write('''The PDF Q&A Solver: Bridging the Gap
+        st.write('''At Revision Module, we are on a mission to make learning more accessible, engaging, and tailored to your unique needs. We believe that education should be a lifelong journey, and it should adapt to your pace and preferences. Dr. Sanjeev Rao, a renowned educator in UCS751, has helped shape this vision into a reality.
 
-Imagine you have a lengthy PDF document packed with valuable information, but you don't have the time or patience to read 
-through the entire document. This is where the PDF Q&A Solver comes into play. This project combines the following 
-components to deliver a revolutionary information retrieval system:
-
-1.Document Parsing: The first step in this process involves the extraction of data from the PDF document. The system parses
-the text and understands its structure, converting the contents into a machine-readable format.
-
-2.Question and Answer Repository: Users can provide a set of questions and answers related to the document's content. These
-serve as the basis for the system to understand what information is relevant and what needs to be summarized.
-
-3.Summarization: After identifying relevant sections, the system summarizes the content based on the questions and answers 
-provided. This summarization process condenses the document into key points, allowing users to quickly access essential information.
-
-
+                Imagine you have a lengthy PDF document packed with valuable information, but you don't have the time or patience to read through the entire document. This is where our app comes into play. 
  ''')
         st.write('''
-                 Benefits of the PDF Q&A Solver:
+                 Benefits of our app are:
 
-            1.Time-Saving: Reading through lengthy documents can be time-consuming. With the PDF Q&A Solver, you can swiftly obtain crucial information without having to sift through the entire document.
+            1.Reading through lengthy documents can be time-consuming and more frustrating when exams are much nearer than imagined. With the app, you can swiftly obtain crucial information without having to sift through the entire document.
 
-            2.Enhanced Understanding: The system doesn't just extract information; it also helps you understand how the questions relate to the answers, providing context and clarity.
+            2.Efficient Research: Researchers, students, and professionals can significantly expedite their work by quickly finding relevant data within documents.
 
-            3.Efficient Research: Researchers, students, and professionals can significantly expedite their work by quickly finding relevant data within documents.
-
-            4.Customizable: Users have the flexibility to input their own questions and answers, tailoring the system to their specific needs.
+            3.Customizable: Users have the flexibility to input their own questions and answers, tailoring the system to their specific needs.They can even get summary of entire document.
 
                  ''')
         st.write('''
-                 Conclusion:
-
-The PDF Q&A Solver represents a significant leap forward in the quest for efficient knowledge extraction from PDF documents. It combines the power of machine learning, NLP, and summarization techniques to
-revolutionize the way we interact with information, making it more accessible, comprehensible, and time-efficient. In an era where information is power, tools like the PDF Q&A Solver empower individuals and 
-organizations to harness the full potential of the knowledge at their disposal. This innovative project exemplifies the ongoing evolution of technology in making the world's vast store of information more manageable and accessible to all.
+                 Thank you for visiting Revision Module. Together with Dr. Sanjeev Rao and the UCS751 community, we're here to revolutionize your learning experience.
                  ''')
     if selected =="About":
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Welcome to UCS751 Group Project</p>' 
         st.markdown(new_title, unsafe_allow_html=True)
-        st.write("UCS751 Simulation and Modeling is an advanced academic course that delves into the intricate world of replicating and analyzing real-world systems and processes through mathematical and computational models. Students explore various simulation techniques, including Monte Carlo, discrete event simulations, and agent-based modeling, while gaining hands-on experience in model development, data collection, and optimization. With applications spanning engineering, economics, healthcare, environmental science, and beyond, Simulation and Modeling equips students with the versatile skills needed to address complex challenges and inform data-driven decisions in an ever-evolving, technology-driven world.")
-    
+        st.write("Welcome to the About page of project. Our app is a labor of love brought to you by a dedicated team of talented individuals, each contributing their unique skills and expertise to create a transformative learning experience. Let's meet the minds that made this possible:")
+        name1 = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Ishanpreet Singh</p>' 
+        st.markdown(name1, unsafe_allow_html=True)
+        st.markdown("""
+                        - Roll Number: 102003641
+                        - Role: Lead Developer
+                    """)
+        name2 = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Rohit Singla</p>' 
+        st.markdown(name2, unsafe_allow_html=True)
+        st.markdown("""
+                        - Roll Number: 102003254
+                        - Role: Developer
+                    """)
+        name3 = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Tushar Gupta</p>' 
+        st.markdown(name3, unsafe_allow_html=True)
+        st.markdown("""
+                        - Roll Number: 102003252
+                        - Role: UX Designer
+                    """)
     if selected == "Summarizer":
         new_title = '<p style="font-family:Times-New-Roman; text-align: center; color:WHITE; font-size: 42px;"> Document Summarizer </p>' 
         st.markdown(new_title, unsafe_allow_html=True) 
