@@ -1,4 +1,5 @@
 #pylint: skip-file
+import sqlite3
 import streamlit as st
 import cv2
 import numpy as np
@@ -20,6 +21,12 @@ import time
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join("/workspaces/Python-project", 'db.sqlite3'),
+#     }
+# }
 cr = CurrencyRates()
 def load_document(file):
     import os
@@ -158,8 +165,8 @@ if __name__ == "__main__":
                         chunks = chunk_data(data , chunk_size=chunk_size) 
                         st.write(f"chunk size: {chunk_size} , chunks: {len(chunks)} ")
                         
-                        tokens,embedding_cost = calculate_embedding_cost(chunks)
-                        st.write(f"Embedding Cost is Rs{embedding_cost:.4f}")
+                        #tokens,embedding_cost = calculate_embedding_cost(chunks)
+                        #st.write(f"Embedding Cost is Rs{embedding_cost:.4f}")
                         
                         vector_store = create_embeddings(chunks)
                         st.session_state.vs = vector_store
