@@ -12,4 +12,4 @@ tiktoken==0.4.0
 pypdf
 openai==0.28.1
 pysqlite3-binary
-chromadb==0.4.14
+chromadb==0.4.15
