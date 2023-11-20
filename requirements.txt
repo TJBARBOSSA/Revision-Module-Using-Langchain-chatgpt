@@ -10,6 +10,6 @@ streamlit==1.27.2
 streamlit_option_menu==0.3.6
 tiktoken==0.4.0
 pypdf
-openai
+openai==0.28.1
 pysqlite3-binary
 chromadb==0.4.14
