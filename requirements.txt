@@ -9,7 +9,7 @@ st_btn_select==0.1.2
 streamlit==1.27.2
 streamlit_option_menu==0.3.6
 tiktoken==0.4.0
-pypdf
+pypdf==3.17.1
 openai==0.28.1
-pysqlite3-binary
+pysqlite3-binary==0.5.2
 chromadb==0.4.15
